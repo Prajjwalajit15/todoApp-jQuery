@@ -103,14 +103,14 @@ localStorage.removeItem("todoList");
     renderTasks();
   });
 
-  // Toggle Done
+   
   todoList.on("change", ".form-check-input", function () {
     const index = $(this).data("index");
     tasks[index].done = this.checked;
     renderTasks();
   });
 
-  // Delete Task
+   
   todoList.on("click", ".deleteBtn", function () {
     const li = $(this).closest("li");
     const index = li.find("input[type='checkbox']").data("index");
@@ -125,7 +125,7 @@ localStorage.removeItem("todoList");
     renderTasks();
   });
 
-  // Edit Task
+   
   todoList.on("click", ".editBtn", function () {
     const li = $(this).closest("li");
     const index = li.find("input[type='checkbox']").data("index");
@@ -134,7 +134,7 @@ localStorage.removeItem("todoList");
     const taskSpan = li.find(".task-text");
     const currentText = task.text;
 
-    // Replace text with input
+   
     taskSpan.replaceWith(`<input type="text" class="form-control form-control-sm task-edit-input mt-1" value="${currentText}" style="max-width: 250px;">`);
 
     li.find(".editBtn").addClass("d-none");
@@ -142,7 +142,7 @@ localStorage.removeItem("todoList");
     li.find(".priority-dropdown").removeClass("d-none").val(task.priority);
   });
 
-  // Save Edited Task
+   
   todoList.on("click", ".saveBtn", function () {
     const li = $(this).closest("li");
     const index = li.find("input[type='checkbox']").data("index");
