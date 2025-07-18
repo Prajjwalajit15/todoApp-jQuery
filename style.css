@@ -353,3 +353,25 @@ input[type="checkbox"] {
 }
 
  
+
+
+
+
+@media (max-width: 680px) {
+  .glass-navbar h1 {
+    font-size: 1.25rem; /* smaller title */
+    text-align: center;
+  }
+
+  .glass-navbar span {
+    font-size: 0.9rem;
+    margin-top: 0.5rem;
+    display: block;
+    text-align: center;
+  }
+
+  .glass-navbar .container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
