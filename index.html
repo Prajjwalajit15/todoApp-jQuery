@@ -27,27 +27,29 @@
 
     
     <div class="container my-4">
-  <div class="row g-2 align-items-end">
-    <div class="col-md-6 input-wrapper">
-      <label for="todoInput" class="form-label">Task</label>
-      <input type="text" id="todoInput" class="form-control" placeholder="Enter a task">
-    </div>
-    <div class="col-md-3 dropdown-wrapper">
-      <label for="prioritySelect" class="form-label">Priority</label>
-      <select id="prioritySelect" class="form-select">
-        <option value="" selected disabled>Select Priority</option>
-        <option value="High">High</option>
-        <option value="Medium">Medium</option>
-        <option value="Low">Low</option>
-      </select>
-    </div>
-    <div class="">
-      <button id="addBtn" class="btn btn-primary w-100">Add Task</button>
-    </div>
+<div class="row g-2 align-items-end">
+  <div class="col-md-6 col-12 position-relative field-wrapper">
+    <label for="todoInput" class="form-label">Task</label>
+    <input type="text" id="todoInput" class="form-control" placeholder="Enter a task">
   </div>
+  <div class="col-md-3 col-12 position-relative field-wrapper">
+    <label for="prioritySelect" class="form-label">Priority</label>
+    <select id="prioritySelect" class="form-select">
+      <option value="" selected disabled>Select Priority</option>
+      <option value="High">High</option>
+      <option value="Medium">Medium</option>
+      <option value="Low">Low</option>
+    </select>
+  </div>
+  <div class="col-md-3 col-12 d-flex flex-column justify-content-end">
+    <label class="form-label invisible">Add</label>
+    <button id="addBtn" class="btn btn-primary">Add Task</button>
+  </div>
+</div>
+
 
   <p class="mt-3" id="taskStats"></p>
-  <ul class="list-group mt-2" id="todoList"></ul>
+  <!-- <ul class="list-group mt-2" id="todoList"></ul> -->
 </div>
 
  
